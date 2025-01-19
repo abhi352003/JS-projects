@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(120deg, #1f1c2c, #928dab);
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+#Days {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 20px 0;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #232526, #414345);
+    color: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    min-width: 320px;
+}
+
+#time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #232526, #414345);
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    min-width: 320px;
+}
+
+#Hr, #Min, #Sec {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(135deg, #3a3d40, #181818);
+    color: #e0e0e0;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1;
+    margin: 0 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#Hr:hover, #Min:hover, #Sec:hover {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
